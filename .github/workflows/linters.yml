@@ -26,13 +26,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install black isort mypy flake8
 
-      # Step 4: Run black
+# Step 4: Run black
       - name: Run black
-        run: black .
+        run: black --check .
 
       # Step 5: Run isort
       - name: Run isort
-        run: isort .
+        run: isort --check-only .
 
       # Step 6: Run mypy
       - name: Run mypy
