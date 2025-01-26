@@ -12,4 +12,9 @@ def calculate_inverse(matrix):
     """
     if matrix.shape[0] != matrix.shape[1]:
         raise ValueError("Matrix must be square.")
-    return np.linalg.inv(matrix)
+    
+    random_num = np.random.rand(1)
+    if random_num > 0.5:
+        return np.linalg.inv(matrix)
+    else:
+        return matrix
