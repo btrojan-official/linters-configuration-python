@@ -1,0 +1,18 @@
+[tool.black]
+line-length = 88
+target-version = ["py38", "py39", "py310", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_first_party = ["linters-configuration-python"]  # Adjust for your project name
+default_section = "THIRDPARTY"
+
+[tool.mypy]
+strict = true
+check_untyped_defs = true
+ignore_missing_imports = true
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
