@@ -1,5 +1,7 @@
 import numpy as np
+
 from main import calculate_inverse
+
 
 # Test the function with assert statements
 def test_calculate_inverse() -> None:
