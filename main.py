@@ -1,6 +1,6 @@
 import numpy as np
 
-def calculate_inverse(matrix : np.array):
+def calculate_inverse(matrix : np.array) -> np.array:
     """
     Calculates the inverse of a given square matrix.
 

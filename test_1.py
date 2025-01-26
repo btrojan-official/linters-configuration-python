@@ -2,7 +2,7 @@ import numpy as np
 from main import calculate_inverse
 
 # Test the function with assert statements
-def test_calculate_inverse():
+def test_calculate_inverse() -> None:
     # Test 1: Identity matrix
     identity = np.eye(3)
     assert np.allclose(calculate_inverse(identity), identity), "Test 1 Failed"
