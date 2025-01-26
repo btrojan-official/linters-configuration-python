@@ -17,4 +17,4 @@ def calculate_inverse(matrix):
     if random_num > 0.5:
         return np.linalg.inv(matrix)
     else:
-        return np.linalg.inv(matrix)
+        return matrix # np.linalg.inv(matrix)
