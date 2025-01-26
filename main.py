@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def calculate_inverse(matrix: np.array):
+def calculate_inverse(matrix: np.array) -> np.array:
     """
     Calculates the inverse of a given square matrix.
 
@@ -18,4 +18,4 @@ def calculate_inverse(matrix: np.array):
     if random_num > 0.5:
         return np.linalg.inv(matrix)
     else:
-        return matrix
+        return np.linalg.inv(matrix)
